@@ -598,9 +598,9 @@ Table OF Contents
         text-align: center;
     }
 
-    .home-content h1 {
-    // text-transform: uppercase;
-    }
+    /*.home-content h1 {
+     text-transform: uppercase;
+    }*/
     .home-content button {
     margin-top: 20px;
     }
@@ -1436,10 +1436,10 @@ Table OF Contents
 
 
 
-    .contact:after {
+/*     .contact:after {
         content: "";
         background-color: #1C1D21;
-        opacity: 0.8;
+        opacity: 1;
         position: absolute;
         left: 0;
         top: 0;
@@ -1448,7 +1448,7 @@ Table OF Contents
         z-index: -1;
         -webkit-transition: 0.2s width;
         transition: 0.2s width;
-    }
+    } */
 
     .contact:hover:after {
         width: 100%;

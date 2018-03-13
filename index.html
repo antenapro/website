@@ -45,9 +45,39 @@
 			display: none; /*makes the field not visible to humans*/
 		}
 
-		.istaknuto {
-			background: yellow
+		input[type="text"],
+		input[type="email"],
+		textarea[type="message"]
+		{
+			background: transparent;
+			border: none;
+			border-bottom: 1px solid #000000;
+			-webkit-box-shadow: none;
+			box-shadow: none;
+			border-radius: 0;
 		}
+
+		textarea:focus,
+		input[type="text"]:focus,
+		input[type="password"]:focus,
+		input[type="datetime"]:focus,
+		input[type="datetime-local"]:focus,
+		input[type="date"]:focus,
+		input[type="month"]:focus,
+		input[type="time"]:focus,
+		input[type="week"]:focus,
+		input[type="number"]:focus,
+		input[type="email"]:focus,
+		input[type="url"]:focus,
+		input[type="search"]:focus,
+		input[type="tel"]:focus,
+		input[type="color"]:focus,
+		.uneditable-input:focus {   
+			border-color: rgba(16,22,26, 0.8);
+			box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(16,22,26, 0.6);
+			outline: 0 none;
+		}
+
 
 	</style>
 
@@ -132,7 +162,6 @@
 										ili e-mailom: <a href="mailto:ivan@antenapro.hr?subject=antenapro.hr website">ivan@antenapro.hr</a>
 									</p>		
 									
-									<br>
 									<br>
 
 									<p>
@@ -328,7 +357,7 @@
 	<!-- /Videonadzor -->
 
 	<!-- TotalTV-->
-		<div id="totaltv" class="section md-padding bg-grey">
+		<div id="totaltv" class="section md-padding">
 
 			<!-- Container -->
 			<div class="container">
@@ -358,7 +387,7 @@
 							<hr>
 
 							<p>
-								<h3 class="istaknuto">
+								<h3 class="bg-grey">
 									TotalTV AKCIJA !!!
 								</h3>
 							</p>
@@ -393,7 +422,7 @@
 					<!-- About slider -->
 						<div class="col-md-6 ">
 							<!-- contact form -->
-							<div class="form-group">
+							<div class="form-group" style="margin-top:15%;">
 									<div class="col-md-12 text-center">
 										<label for="cpDesc">Pošaljite upit za TotalTV</label>
 									</div>
@@ -412,8 +441,6 @@
 											</div>
 										<!-- /Response message -->
 
-
-
 										<form 
 											id="gform"
 											class="contact-form"
@@ -426,9 +453,9 @@
 												<input id="tema" type="text" name="tema" value="TotalTV" />
 											
 
-												<input type="text" name="name" class="input-lg margin-bottom" placeholder="Ime">
-												<input type="email" name="email" class="input-lg margin-bottom" placeholder="Email">														 
-												<textarea type="message" name="message" placeholder="Upit" class="input-totalTV"></textarea>
+												<input type="text" name="name" class="input-lg margin-bottom" placeholder="Ime" required>
+												<input type="email" name="email" class="input-lg margin-bottom" placeholder="Email" required>														 
+												<textarea type="message" name="message" placeholder="Upit" class="input-totalTV" required></textarea>
 												<button type="submit" class="main-btn">Pošalji</button>
 										</form>
 									</div>
@@ -513,7 +540,7 @@
 
 	
 	<!-- Contact -->
-		<div id="contact" class="section md-padding">
+		<div id="contact" class="section md-padding bg-grey">
 
 			<!-- Container -->
 			<div class="container">
