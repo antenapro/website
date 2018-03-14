@@ -193,6 +193,10 @@ Table OF Contents
         margin-top: 20px;
     }
 
+    .text-center {
+        text-align: center;
+    }
+
     .text-center .title:after {
         margin: 20px auto 0px;
     }
