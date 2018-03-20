@@ -19,12 +19,24 @@
 	<style>
 		.text-to-right{
 			text-align: right;
+			padding-right: 5%;
 		}
 		.text-to-left{
 			text-align: left;
-			font-size: 5rem;
+			font-size: 4rem;
 			position: fixed;
 			bottom: 0px;
+			padding-left: 5%;
+		}
+
+		.to-bottom {
+			margin-top:4%;
+		}
+
+		@media screen and (max-width: 1024px) and (max-height:550px) and (orientation: landscape) { 
+			.nav-transparent { opacity:0.2;}
+			.fixed-nav { opacity:1;}
+
 		}
 		
 		.fa-facebook, .fa-instagram {
@@ -118,7 +130,7 @@
 						<div class="row">
 
 							<!-- home content -->
-							<div class="col-md-10 col-md-offset-1 text-to-right">
+							<div class="text-to-right">
 								<div class="home-content">
 
 
@@ -155,15 +167,11 @@
 									
 									<br>
 
-									<p>
-										AntenaPro j.d.o.o.
-									</p>
-									<p>
-										Zagreb, Banatska 38
-									</p>
-									<p>
-										OIB: 77718126467
-									</p>
+									<ul class="to-bottom">
+										<li>AntenaPro j.d.o.o.</li>
+										<li>Zagreb, Banatska 38</li>
+										<li>OIB: 77718126467</li>											
+									</ul>
 									
 								</div>
 								
@@ -417,7 +425,7 @@
 										<form 
 											id="gform"
 											class="contact-form"
-											action="https://script.google.com/macros/s/AKfycbwal_heHkbRiAnIQPbWNEaADcCkRJHy4ze9fFVcFqv5uvvaFu2g/exec"
+											action="https://script.google.com/macros/s/AKfycbwikY0I-rmjHWGs6EfIR8SyltZFcsIsT77_VK8rCb6xIlBKB3GH/exec"
 											method="POST">					
 											
 											<!--input id must be honeypot or else it wont work-->
@@ -582,7 +590,7 @@
 						<form 
 							id="gform2"
 							class="contact-form"
-							action="https://script.google.com/macros/s/AKfycbwal_heHkbRiAnIQPbWNEaADcCkRJHy4ze9fFVcFqv5uvvaFu2g/exec"
+							action="https://script.google.com/macros/s/AKfycbwikY0I-rmjHWGs6EfIR8SyltZFcsIsT77_VK8rCb6xIlBKB3GH/exec"
 							method="POST">					
 							
 							<!--input id must be honeypot or else it wont work-->
